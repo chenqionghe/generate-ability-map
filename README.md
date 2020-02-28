@@ -36,7 +36,7 @@ generate_ability_map(abilities,super_heros, 2)
 ![](.readme/naruto.png)
 
 
-## 示例代码二：健身
+## 示例代码三：健身
 ```python
 super_heros = {
     '雪山飞猪': [140,100,160],
