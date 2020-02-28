@@ -13,3 +13,13 @@ super_heros = {
     '鹰眼': [5, 3, 3, 2, 2, 7],
 }
 generate_ability_map(abilities, super_heros)
+
+abilities = ['忍', '体', '幻', '贤', '力', '速', '精', '印']
+ninjia = {
+    '旗木卡卡西': [10, 9, 8, 10, 7, 9, 6, 10],
+    '自来也': [10, 9, 6, 9, 9, 9, 10, 9],
+    '纲手': [10, 10, 7, 10, 10, 7, 8, 8],
+    '宇智波鼬': [10, 9, 10, 10, 7, 10, 5, 10],
+}
+generate_ability_map(abilities, ninjia, 2)
+

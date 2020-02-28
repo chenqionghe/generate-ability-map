@@ -1,6 +1,6 @@
 # 生成战力分布图
 
-示例代码
+### 示例代码一：漫威超级英雄
 ```python
 from tool import generate_ability_map
 
@@ -20,3 +20,30 @@ generate_ability_map(abilities, super_heros)
 ```
 运行结果
 ![](.readme/super_heros)
+
+## 示例代码二：龙珠
+```python
+abilities = ['忍', '体', '幻', '贤', '力', '速', '精', '印']
+super_heros= {
+    '旗木卡卡西': [10, 9, 8, 10, 7, 9, 6, 10],
+    '自来也': [10, 9, 6, 9, 9, 9, 10, 9],
+    '纲手': [10, 10, 7, 10, 10, 7, 8, 8],
+    '宇智波鼬': [10, 9, 10, 10, 7, 10, 5, 10],
+}
+generate_ability_map(abilities,super_heros, 2)
+```
+运行结果
+![](.readme/drangonball.png)
+
+
+## 示例代码二：健身
+```python
+super_heros = {
+    '雪山飞猪': [140,100,160],
+    '孙悟空': [800,550,1000],
+    '贝吉塔': [750,500,950],
+}
+generate_ability_map(abilities,super_heros)
+```
+运行结果
+![](.readme/bodyBuilding.png)
