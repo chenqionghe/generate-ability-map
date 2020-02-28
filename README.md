@@ -21,7 +21,7 @@ generate_ability_map(abilities, super_heros)
 运行结果
 ![](.readme/super_heros)
 
-## 示例代码二：龙珠
+## 示例代码二：火影
 ```python
 abilities = ['忍', '体', '幻', '贤', '力', '速', '精', '印']
 super_heros= {
@@ -33,7 +33,7 @@ super_heros= {
 generate_ability_map(abilities,super_heros, 2)
 ```
 运行结果
-![](.readme/drangonball.png)
+![](.readme/naruto.png)
 
 
 ## 示例代码二：健身
