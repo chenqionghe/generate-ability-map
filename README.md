@@ -47,3 +47,8 @@ generate_ability_map(abilities,super_heros)
 ```
 运行结果
 ![](.readme/bodyBuilding.png)
+
+
+
+
+代码详解说明，请查看博客：[Matplotlib绘制漫威英雄战力图，带你飞起来！](https://www.cnblogs.com/chenqionghe/p/12376528.html)
