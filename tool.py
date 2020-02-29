@@ -31,7 +31,6 @@ def get_range(data_list):
 # 生成能力分布图
 def generate_ability_map(abilities, data_list, rows=3):
     min, max = get_range(data_list)
-
     # 根据能力项等分圆
     angles = np.linspace(0, 2 * np.pi, len(abilities), endpoint=False)
     angles = np.append(angles, angles[0])

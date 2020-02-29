@@ -28,7 +28,7 @@ ninjia = {
 generate_ability_map(abilities, ninjia, 2)
 
 
-# 龙珠健身
+# 健身
 abilities = ['深蹲','卧推','硬拉']
 super_heros = {
     '雪山飞猪': [140,100,160],
