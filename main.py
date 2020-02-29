@@ -1,6 +1,5 @@
 from tool import generate_ability_map
 
-
 # 漫威英雄
 abilities = ['智力', '力量', '速度', '耐力', '能量', '技能']
 super_heros = {
@@ -16,7 +15,6 @@ super_heros = {
 }
 generate_ability_map(abilities, super_heros)
 
-
 # 火影忍者
 abilities = ['忍', '体', '幻', '贤', '力', '速', '精', '印']
 ninjia = {
@@ -27,13 +25,11 @@ ninjia = {
 }
 generate_ability_map(abilities, ninjia, 2)
 
-
 # 健身
-abilities = ['深蹲','卧推','硬拉']
+abilities = ['深蹲', '卧推', '硬拉']
 super_heros = {
-    '雪山飞猪': [140,100,160],
-    '孙悟空': [850,750,1000],
-    '贝吉塔': [750,600,850],
+    '雪山飞猪': [140, 100, 160],
+    '孙悟空': [850, 750, 1000],
+    '贝吉塔': [750, 600, 850],
 }
-generate_ability_map(abilities,super_heros)
-
+generate_ability_map(abilities, super_heros)
