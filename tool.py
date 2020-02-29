@@ -25,7 +25,7 @@ def get_range(data_list):
                 min = v
             if v > max:
                 max = v
-    return [min, max + 0.1]
+    return [min, max]
 
 
 # 生成能力分布图
@@ -56,8 +56,9 @@ def generate_ability_map(abilities, data_list, rows=3):
         ax.set_xticklabels(abilities)
         # 设置名称
         ax.set_title(name, size=10, color='black', position=(0.5, 0.4))
-        # 设置极径范围
+        # 设置极径最小值
         ax.set_rmin(min)
-        ax.set_rmax(max)
+        # 设置极径最大值(最大值加0.1，要不线条最外圈线显示不完全)
+        ax.set_rmax(max + 0.1)
         i = i + 1
     plt.show()
