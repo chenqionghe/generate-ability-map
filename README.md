@@ -19,7 +19,7 @@ super_heros = {
 generate_ability_map(abilities, super_heros)
 ```
 运行结果
-![](.readme/super_heros.png)
+![](.readme/super_herors.png)
 
 ## 示例代码二：火影
 ```python
