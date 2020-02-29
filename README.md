@@ -19,7 +19,7 @@ super_heros = {
 generate_ability_map(abilities, super_heros)
 ```
 运行结果
-![](.readme/super_heros)
+![](.readme/super_heros.png)
 
 ## 示例代码二：火影
 ```python
@@ -38,10 +38,11 @@ generate_ability_map(abilities,super_heros, 2)
 
 ## 示例代码三：健身
 ```python
+abilities = ['深蹲','卧推','硬拉']
 super_heros = {
     '雪山飞猪': [140,100,160],
-    '孙悟空': [800,550,1000],
-    '贝吉塔': [750,500,950],
+    '孙悟空': [850,750,1000],
+    '贝吉塔': [750,600,850],
 }
 generate_ability_map(abilities,super_heros)
 ```

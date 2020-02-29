@@ -16,8 +16,22 @@ plt.rcParams['font.family'] = 'SimHei'
 plt.style.use('ggplot')
 
 
+# 获取极径范围
+def get_range(data_list):
+    max = min = 0
+    for _, data in data_list.items():
+        for v in data:
+            if v < min:
+                min = v
+            if v > max:
+                max = v
+    return [min, max + 0.1]
+
+
 # 生成能力分布图
 def generate_ability_map(abilities, data_list, rows=3):
+    min, max = get_range(data_list)
+
     # 根据能力项等分圆
     angles = np.linspace(0, 2 * np.pi, len(abilities), endpoint=False)
     angles = np.append(angles, angles[0])
@@ -42,5 +56,8 @@ def generate_ability_map(abilities, data_list, rows=3):
         ax.set_xticklabels(abilities)
         # 设置名称
         ax.set_title(name, size=10, color='black', position=(0.5, 0.4))
+        # 设置极径范围
+        ax.set_rmin(min)
+        ax.set_rmax(max)
         i = i + 1
     plt.show()
